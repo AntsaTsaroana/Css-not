@@ -1,0 +1,61 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > .section_1 {
+    background-color: #121212;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section_1 > span {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: #617A55;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sect_1_child {
+    width: 50px;
+    height: 50vh;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.wrapper div:first-child {
+    background-color: #617A55;
+}
+.wrapper div:nth-child(2) {
+    background-color: crimson;
+}
+.wrapper div:nth-child(3) {
+    background-color: steelblue;
+}
+.wrapper div:nth-child(4) {
+    background-color: rgb(255, 123, 0);
+}
+
+.wrapper .sect_1_child:not(.active)  {
+    opacity: 0.5;
+    filter: blur(0.8px);
+}
+
+.wrapper .active {
+    width: 150px;
+}
